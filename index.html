@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mortgage Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Mortgage Calculator</h1>
+		<form>
+			<div class="form-group">
+				<label for="principal">Loan Amount ($):</label>
+				<input type="number" class="form-control" id="principal" placeholder="Enter loan amount">
+			</div>
+			<div class="form-group">
+				<label for="interest">Interest Rate (%):</label>
+				<input type="number" class="form-control" id="interest" placeholder="Enter interest rate">
+			</div>
+			<div class="form-group">
+				<label for="term">Loan Term (years):</label>
+				<input type="number" class="form-control" id="term" placeholder="Enter loan term">
+			</div>
+			<button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+			<div class="form-group">
+				<label for="monthly-payment">Monthly Payment:</label>
+				<input type="text" class="form-control" id="monthly-payment" readonly>
+			</div>
+			<div class="form-group">
+				<label for="total-payment">Total Payment:</label>
+				<input type="text" class="form-control" id="total-payment" readonly>
+			</div>
+			<div class="form-group">
+				<label for="total-interest">Total Interest:</label>
+				<input type="text" class="form-control" id="total-interest" readonly>
+			</div>
+		</form>
+	</div>
+
+	<script src="mortgage.js"></script>
+</body>
+</html>
